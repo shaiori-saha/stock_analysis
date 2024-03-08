@@ -4,6 +4,7 @@ dbu_all_raw.zip
 dbu_missing_raw.zip
 daily_aggregate/**
 commands.txt
+metabase-data/
 
 # Compiled Python bytecode
 *.py[cod]
