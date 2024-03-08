@@ -1,0 +1,24 @@
+version: '3'
+services:
+  db:
+    image: postgres
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: my_pg_user
+      POSTGRES_PASSWORD: my_pg_pass
+      POSTGRES_PORT: 5432
+    volumes:
+      - ./init_db:/docker-entrypoint-initdb.d
+      - ./pg_datadir:/var/lib/postgresql/data
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+  metabase:
+    image: metabase/metabase
+    restart: always
+    ports:
+      - 3000:3000

@@ -1,0 +1,17 @@
+pg_datadir/
+__py_cache__/**
+dbu_all_raw.zip
+dbu_missing_raw.zip
+daily_aggregate/**
+commands.txt
+
+# Compiled Python bytecode
+*.py[cod]
+
+.vscode/*
+
+# Local History for Visual Studio Code
+.history/
+
+# venv for virtual env
+.venv
